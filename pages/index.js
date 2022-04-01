@@ -1,6 +1,48 @@
 import Hero from "@components/organisms/Hero";
 import Head from "next/head";
+import Border from "@components/atoms/Border";
+import Container from "@components/templates/Container";
+import Roles from "@components/molecules/Roles";
+import Tech from "@components/molecules/Tech";
+import LinkComponent from "@components/atoms/LinkComponent";
+import Link from "next/link";
+import HeroTitle from "@components/atoms/HeroTitle";
+import EndTitle from "@components/atoms/EndTitle";
+import Experience from "@components/organisms/Experience";
 
+const jobs = [
+  {
+    title: "Cobas Asset Management",
+    href: "https://cobasam.com/",
+    year: "22",
+    roles: ["Full-Stack", "DigitalConsultancy", "DBA", "DataEngineering"],
+    tech: ["NextJS", "React", "PostgreSQL", "MongoDB", "Azure DF"],
+    more: "Design and coding of back-office applications.",
+  },
+  {
+    title: "tagle.dev",
+    href: "https://tagle.dev/",
+    year: "21—22",
+    roles: ["Owner", "Freelance"],
+    tech: ["NextJS", "React", "Sanity", "Eleventy"],
+    more: "It channels my freelance work.",
+  },
+  {
+    title: "Claps Artificial Intelligence, Inc.",
+    href: "https://claps.ai/",
+    year: "21",
+    roles: ["COO"],
+    tech: ["Swift", "SwiftUI"],
+    more: "+200K € raised in seed funding by Eneko Knorr & others.",
+  },
+  {
+    title: "CMC Group (now acquired by CGI)",
+    href: "https://www.cgi.com/",
+    year: "19—21",
+    roles: ["Digital Marketing", "Front-End"],
+    tech: ["Eleventy", "JavaScript", "CSS", "SQL", "SageCRM"],
+  },
+];
 
 export default function Home() {
   return (
@@ -11,11 +53,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Hero />
+      <main className="mt-12 space-y-24">
+        <section>
+          <Hero />
+        </section>
+        <section>
+          <Experience props={jobs} />
+        </section>
+        <section>
+          <Container>
+            <div>
+              <EndTitle>
+                Previous work includes digital marketing in Spanish & SF{" "}
+                <LinkComponent href="https://www.crunchbase.com/organization/airwork">
+                  startups
+                </LinkComponent>
+                , video/film work, and legal consultancy.
+              </EndTitle>
+            </div>
+          </Container>
+        </section>
       </main>
-
-      <footer></footer>
+      <footer className="mt-48">
+        <Container>No need for a footer.</Container>
+      </footer>
     </div>
   );
 }
