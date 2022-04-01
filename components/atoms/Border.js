@@ -4,7 +4,7 @@ export default function Border({ className }) {
   return (
     <div
       className={twClass(
-        "border-[#182f45] border-b border-dotted",
+        "border-black border-y",
         className && `${className}`
       )}
     ></div>
