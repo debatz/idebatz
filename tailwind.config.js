@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        brygada: ['Brygada 1918', "serif"],
+        brygada: ['"Brygada 1918"', "serif"],
       },
     },
   },
