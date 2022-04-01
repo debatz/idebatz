@@ -1,7 +1,8 @@
-import HeroTitle from '@components/atoms/HeroTitle';
-import LinkComponent from '@components/atoms/LinkComponent';
-import Nav from '@components/molecules/Nav';
-import Container from '@components/templates/Container';
+import HeroTitle from "@components/atoms/HeroTitle";
+import LinkComponent from "@components/atoms/LinkComponent";
+import Nav from "@components/molecules/Nav";
+import Container from "@components/templates/Container";
+import Border from "@components/atoms/Border";
 
 export default function Hero() {
   return (
@@ -16,7 +17,6 @@ export default function Hero() {
             marketer & startup founder.
           </HeroTitle>
         </div>
-
         <div className="w-1/5">
           <Nav />
         </div>
