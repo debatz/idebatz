@@ -22,12 +22,12 @@ export default function Experience({ props }) {
                     <p className="text-base md:text-2xl font-brygada">
                       {item.more}
                     </p>
-                    <div>
+                    <div className='space-y-1'>
                       <Roles props={item.roles} />
                       <Tech props={item.tech} />
                     </div>
                   </div>
-                  <h3 className="hidden md:text-4xl lg:text-5xl font-brygada">
+                  <h3 className="hidden md:block md:text-4xl lg:text-5xl font-brygada">
                     {item.year}
                   </h3>
                 </div>
