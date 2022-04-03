@@ -10,9 +10,8 @@ module.exports = {
         fira: ['"Fira Code"', "monospace"],
       },
       cursor: {
-        'ff1': 'url(/FFVIIICursor01.cur), default',
-        'ff2': 'url(/FFVIIICursor02.cur), pointer',
-        'ff3': 'url(/FFVIIICursor03.cur), text'
+        'ff1': 'url(/FFVIIICursor01.png), default',
+        'ff2': 'url(/FFVIIICursor02.png), pointer'
       }
     },
   },
