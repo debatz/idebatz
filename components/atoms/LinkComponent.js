@@ -9,7 +9,7 @@ export default function LinkComponent({ children, href }) {
     focus:[background-size:100%_100%]"
       href={href}
     >
-      {children} ↗
+      {children}↗
     </a>
   );
 }
