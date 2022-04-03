@@ -1,12 +1,8 @@
 import Hero from "@components/organisms/Hero";
 import Head from "next/head";
-import Container from "@components/templates/Container";
-import LinkComponent from "@components/atoms/LinkComponent";
-import EndTitle from "@components/atoms/EndTitle";
 import Experience from "@components/organisms/Experience";
 import Footer from "@components/organisms/Footer";
 import PostScriptum from "@components/organisms/PostScriptum";
-import HeroTitle from "@components/atoms/HeroTitle";
 
 const jobs = [
   {

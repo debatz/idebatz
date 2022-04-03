@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html className="cursor-ff2" lang="en">
+    <Html className="cursor-ff2 selection:bg-[#f92aad] selection:text-white" lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

@@ -11,7 +11,7 @@ export default function Nav() {
         </li>
         <li className="relative">
           C:\about
-          <span className="absolute top-0 right-0 px-1 -mr-4 text-xs text-white bg-black rounded-sm md:-mr-8">
+          <span className="absolute top-0 right-0 px-1 -mr-4 text-xs text-white bg-[#f92aad] rounded-sm md:-mr-8">
             SOON!
           </span>
         </li>
