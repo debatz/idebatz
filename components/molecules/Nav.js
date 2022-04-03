@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <nav>
-      <ul className="space-y-1 text-xl text-right font-fira cursor-ff1">
+      <ul className="space-y-1 text-xl md:text-right font-fira cursor-ff1">
         <li>
           <Link href="/" passHref>
             <a className="cursor-ff1">C:\home</a>
@@ -11,7 +11,7 @@ export default function Nav() {
         </li>
         <li className="relative">
           C:\about
-          <span className="absolute top-0 right-0 px-1 -mr-8 text-xs text-white bg-black rounded-sm">
+          <span className="absolute top-0 right-0 px-1 -mr-4 text-xs text-white bg-black rounded-sm md:-mr-8">
             SOON!
           </span>
         </li>

@@ -6,11 +6,27 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="mt-32">
-      <IconContext.Provider value={{ className: "w-8 h-8" }}>
+    <footer className="mt-24 md:mt-32">
+      <IconContext.Provider value={{ className: "w-6 h-6 md:w-8 md:h-8" }}>
         <Container>
           <div className="flex items-end justify-between">
-            <Image src="/badge.svg" width="100" height="100" alt="heraldic badge"></Image>
+            <div className="md:hidden">
+              <Image
+                src="/badge.svg"
+                width="50"
+                height="50"
+                alt="heraldic badge"
+              />
+            </div>
+            <div className="hidden md:block">
+              <Image
+                src="/badge.svg"
+                width="100"
+                height="100"
+                alt="heraldic badge"
+              />
+            </div>
+
             <div className="flex">
               <a className="p-2 cursor-ff1" href="https://github.com/debatz">
                 <VscGithubInverted />

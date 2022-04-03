@@ -12,21 +12,28 @@ export default function Experience({ props }) {
           {props.map((item, index) => {
             return (
               <li key={index} className="border-t border-black">
-                <div className="flex justify-between py-4">
+                <div className="flex flex-wrap justify-between py-4">
                   <div className="space-y-2">
-                    <h1 className="text-5xl font-brygada">
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-brygada">
                       <LinkComponent href={item.href}>
                         {item.title}
                       </LinkComponent>
                     </h1>
-                    <p className="text-2xl font-brygada">{item.more}</p>
+                    <p className="text-base md:text-2xl font-brygada">
+                      {item.more}
+                    </p>
                     <div>
                       <Roles props={item.roles} />
                       <Tech props={item.tech} />
                     </div>
                   </div>
-                  <h3 className="text-5xl font-brygada">{item.year}</h3>
+                  <h3 className="hidden md:text-4xl lg:text-5xl font-brygada">
+                    {item.year}
+                  </h3>
                 </div>
+                <h3 className="text-2xl md:hidden font-brygada">
+                  {item.year}
+                </h3>
               </li>
             );
           })}

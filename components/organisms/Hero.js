@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section>
       <Container>
-        <div className="flex items-center justify-between">
-          <div className="w-4/5">
+        <div className="flex flex-col items-start space-y-4 md:space-y-0 md:items-center md:justify-between md:flex-row">
+          <div className="w-full md:w-4/5">
             <HeroTitle>
               <span className="italic font-semibold">batz:</span> I am a{" "}
               <span className="italic font-medium">front-end developer</span>{" "}
@@ -19,7 +19,7 @@ export default function Hero() {
               . Former digital marketer & startup founder.
             </HeroTitle>
           </div>
-          <div className="w-1/5">
+          <div className="md:w-1/5">
             <Nav />
           </div>
         </div>

@@ -3,7 +3,7 @@ export default function Tech({ props }) {
     <div className="flex space-x-4">
       {props.map((item, index) => {
         return (
-          <h4 key={index} className="font-fira">
+          <h4 key={index} className="text-xs md:text-base font-fira">
             {"{"}
             {item}
             {"}"}
